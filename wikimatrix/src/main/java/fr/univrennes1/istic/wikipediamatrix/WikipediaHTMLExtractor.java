@@ -19,8 +19,14 @@ public class WikipediaHTMLExtractor {
 
     public static void main( String[] args ) throws IOException {
         List<String[]> dataLines = createCsvData();
-        CSVWriter writer = new CSVWriter(new FileWriter("test.csv"));
-        writer.writeAll(dataLines);
+
+        for (String[] line : dataLines) {
+            CSVWriter writer = new CSVWriter(new FileWriter("test.csv",true));
+            writer.writeNext(line);
+            writer.flush();
+            writer.close();
+        }
+        
     }
     private static List<String[]> createCsvData() throws IOException {
 
