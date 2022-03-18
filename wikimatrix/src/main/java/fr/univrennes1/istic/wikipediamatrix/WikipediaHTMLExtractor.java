@@ -16,37 +16,50 @@ import org.jsoup.select.Elements;
 
 
 public class WikipediaHTMLExtractor {
-    public static void main( String[] args ) {
+
+    public static void main( String[] args ) throws IOException {
+        List<String[]> dataLines = createCsvData();
+        CSVWriter writer = new CSVWriter(new FileWriter("test.csv"));
+        writer.writeAll(dataLines);
+    }
+    private static List<String[]> createCsvData() throws IOException {
+
         String html = "https://en.wikipedia.org/wiki/Comparison_of_digital_SLRs ";
-        try {
+        List<String[]> dataLines = new ArrayList<>();
+        try{
+
+
             Document doc = Jsoup.connect(html).get();
             Elements trs = doc.select("table.wikitable tr");
 
             //remove header row
             trs.remove(0);
-            List<String[]> dataLines= new ArrayList<>();
             for (Element tr : trs) {
                 Elements tds = tr.getElementsByTag("td");
                 Element td = tds.first();
-                Elements tdbis= Objects.requireNonNull(tds.first()).nextElementSiblings();
-
-                assert td != null;
-                List<String> dataLine= new ArrayList<>();
-                //dataLine.add(td.text());
-                for (Element tp : tdbis){
-                    dataLine.add(tp.text());
+                Elements tdbis = tds.first().nextElementSiblings();
+                if (td != null) {
+                    List<String> dataLine = new ArrayList<>();
+                    dataLine.add(td.text());
+                    for (Element tp : tdbis) {
+                        if (tp != null) {
+                            dataLine.add(tp.text());
+                        } else {
+                            dataLine.add(" ");
+                        }
+                    }
+                    String[] simpleArray = new String[dataLine.size()];
+                    dataLine.toArray(simpleArray);
+                    dataLines.add(simpleArray);
                 }
-                String[] simpleArray = new String[ dataLine.size() ];
-                dataLine.toArray( simpleArray );
-
-                dataLines.add(simpleArray);
-                CSVWriter writer = new CSVWriter(new FileWriter("c:\\test\\monitor.csv"));
-                writer.writeAll(dataLines);
             }
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+
+            }catch (NullPointerException npe){}
+
+
+        return dataLines;
     }
+
     }
 
 
