@@ -2,8 +2,6 @@
 
 Project done by the AAA squad aka Angelina Denis, Arthur Chane-Sam, Arthur Favereaux. 
 
-Peace
-
 
 ## Introduction
 
