@@ -1,5 +1,10 @@
 # Génie Logiciel Project
 
+Project done by the AAA squad aka Angelina Denis, Arthur Chane-Sam, Arthur Favereaux. 
+
+Peace
+
+
 ## Introduction
 
 As part of our third and last year in engineering school at ENSAI we had to carry out a project in groups of 4 to 5 for the ***Génie logiciel*** course.
