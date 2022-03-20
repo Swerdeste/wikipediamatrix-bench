@@ -19,6 +19,7 @@ public class CSVExportVisitor implements Visitor {
         return link.accept(this);
     }
 
+    @Override
     public List<String[]> visitHtml(Html h) {
         String html = h.getUrl();
         List<String[]> dataLines = new ArrayList<>();
