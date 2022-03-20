@@ -4,8 +4,17 @@ import static org.junit.Assert.*;
 
 import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.util.List;
 
+import fr.univrennes1.istic.wikipediamatrix.link.Html;
+import fr.univrennes1.istic.wikipediamatrix.visitor.CSVExportVisitor;
+import org.apache.commons.csv.CSVFormat;
+import org.apache.commons.csv.CSVParser;
+
+import org.apache.commons.csv.CSVRecord;
+import org.jsoup.HttpStatusException;
 import org.junit.Test;
 
 public class BenchTest {
@@ -36,29 +45,37 @@ public class BenchTest {
 	       System.out.println("Wikipedia url: " + wurl);
 	       // TODO: do something with the Wikipedia URL 
 	       // (ie extract relevant tables for correct URL, with the two extractors)
-		    
-	       
+
+
+
 	       // for exporting to CSV files, we will use mkCSVFileName 
 	       // example: for https://en.wikipedia.org/wiki/Comparison_of_operating_system_kernels
 	       // the *first* extracted table will be exported to a CSV file called 
 	       // "Comparison_of_operating_system_kernels-1.csv"
 	       String csvFileName = mkCSVFileName(url, 1);
 	       System.out.println("CSV file name: " + csvFileName);
-	       // the *second* (if any) will be exported to a CSV file called
-	       // "Comparison_of_operating_system_kernels-2.csv"
+		   Html html = new Html(wurl);
+		   try {Demo.main(html);
 
-	       
-	       // TODO: the HTML extractor should save CSV files into output/HTML
-	       // see outputDirHtml 
-	       
-	       // TODO: the Wikitext extractor should save CSV files into output/wikitext
-	       // see outputDirWikitext      
+		   CSVParser parser;
+		   // TODO : Change filepath to output here
+		   FileReader Data = new FileReader("C:\\Users\\achan\\Documents\\Ensai\\wikipediamatrix-bench\\wikimatrix\\output\\html\\"+csvFileName);
+		   parser = CSVParser.parse(Data, CSVFormat.DEFAULT);
+		   int lines = parser.getRecords().size();
+		   CSVExportVisitor datalines = new CSVExportVisitor();
+		   List<String[]> list = datalines.export(html);
+		   assertEquals(lines, list.size());
+
+		   }catch (FileNotFoundException nfe){}catch (HttpStatusException hse){}
+
+
+
 	       
 	       nurl++;	       
 	    }
 	    
 	    br.close();	    
-	    assertEquals(nurl, 336);
+	    assertEquals(nurl, 335);
 	    
 
 

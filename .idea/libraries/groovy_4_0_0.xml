@@ -1,0 +1,68 @@
+<component name="libraryTable">
+  <library name="groovy-4.0.0" type="groovy-sdk">
+    <properties version="4.0.0" />
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/wikimatrix/lib/groovy-datetime-4.0.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/wikimatrix/lib/groovy-astbuilder-4.0.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/wikimatrix/lib/groovy-dateutil-4.0.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/wikimatrix/lib/groovy-ant-4.0.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/wikimatrix/lib/groovy-cli-picocli-4.0.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/wikimatrix/lib/groovy-cli-commons-4.0.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/wikimatrix/lib/groovy-groovydoc-4.0.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/wikimatrix/lib/groovy-docgenerator-4.0.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/wikimatrix/lib/groovy-ginq-4.0.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/wikimatrix/lib/groovy-contracts-4.0.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/wikimatrix/lib/groovy-jsr223-4.0.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/wikimatrix/lib/groovy-macro-library-4.0.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/wikimatrix/lib/groovy-console-4.0.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/wikimatrix/lib/groovy-jmx-4.0.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/wikimatrix/lib/groovy-servlet-4.0.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/wikimatrix/lib/groovy-json-4.0.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/wikimatrix/lib/groovy-macro-4.0.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/wikimatrix/lib/groovy-sql-4.0.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/wikimatrix/lib/groovy-groovysh-4.0.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/wikimatrix/lib/groovy-test-junit5-4.0.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/wikimatrix/lib/groovy-testng-4.0.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/wikimatrix/lib/groovy-test-4.0.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/wikimatrix/lib/groovy-templates-4.0.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/wikimatrix/lib/groovy-toml-4.0.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/wikimatrix/lib/groovy-typecheckers-4.0.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/wikimatrix/lib/groovy-4.0.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/wikimatrix/lib/groovy-swing-4.0.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/wikimatrix/lib/groovy-nio-4.0.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/wikimatrix/lib/groovy-xml-4.0.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/wikimatrix/lib/groovy-astbuilder-4.0.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/wikimatrix/lib/groovy-cli-commons-4.0.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/wikimatrix/lib/groovy-ant-4.0.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/wikimatrix/lib/groovy-datetime-4.0.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/wikimatrix/lib/groovy-cli-picocli-4.0.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/wikimatrix/lib/groovy-contracts-4.0.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/wikimatrix/lib/groovy-console-4.0.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/wikimatrix/lib/groovy-docgenerator-4.0.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/wikimatrix/lib/groovy-ginq-4.0.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/wikimatrix/lib/groovy-jmx-4.0.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/wikimatrix/lib/groovy-groovydoc-4.0.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/wikimatrix/lib/groovy-macro-4.0.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/wikimatrix/lib/groovy-nio-4.0.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/wikimatrix/lib/groovy-servlet-4.0.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/wikimatrix/lib/groovy-jsr223-4.0.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/wikimatrix/lib/groovy-json-4.0.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/wikimatrix/lib/groovy-macro-library-4.0.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/wikimatrix/lib/groovy-4.0.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/wikimatrix/lib/groovy-testng-4.0.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/wikimatrix/lib/groovy-test-junit5-4.0.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/wikimatrix/lib/groovy-swing-4.0.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/wikimatrix/lib/groovy-templates-4.0.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/wikimatrix/lib/groovy-typecheckers-4.0.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/wikimatrix/lib/groovy-xml-4.0.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/wikimatrix/lib/groovy-toml-4.0.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/wikimatrix/lib/groovy-sql-4.0.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/wikimatrix/lib/groovy-groovysh-4.0.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/wikimatrix/lib/groovy-dateutil-4.0.0-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/wikimatrix/lib/groovy-test-4.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

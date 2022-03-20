@@ -30,7 +30,7 @@ public class WikipediaHTMLExtractor {
     }
     private static List<String[]> createCsvData() throws IOException {
 
-        String html = "https://en.wikipedia.org/wiki/Comparison_of_digital_SLRs ";
+        String html = "https://en.wikipedia.org/wiki/Comparison_of_Afrikaans_and_Dutch-1";
         List<String[]> dataLines = new ArrayList<>();
         try{
 

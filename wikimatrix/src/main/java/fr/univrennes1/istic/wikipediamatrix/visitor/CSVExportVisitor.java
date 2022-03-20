@@ -4,6 +4,7 @@ package fr.univrennes1.istic.wikipediamatrix.visitor;
 
 import fr.univrennes1.istic.wikipediamatrix.link.Html;
 import fr.univrennes1.istic.wikipediamatrix.link.Link;
+import org.jsoup.HttpStatusException;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
@@ -26,7 +27,9 @@ public class CSVExportVisitor implements Visitor {
         try {
             Document doc = Jsoup.connect(html).get();
             Elements trs = doc.select("table.wikitable tr");
-
+            if (trs.isEmpty()){
+                throw new Exception("No table here");
+            }
             //remove header row
             trs.remove(0);
             for (Element tr : trs) {
@@ -51,6 +54,7 @@ public class CSVExportVisitor implements Visitor {
         }
         catch (NullPointerException npe) {} catch (IOException e) {
             e.printStackTrace();
+        } catch (Exception e) {
         }
 
         return dataLines;
