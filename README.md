@@ -14,7 +14,8 @@ A Wikipedia page can be analysed using two different methods : <br>
 - By picking up the Wikitext code corresponding
 - By exploiting the HTML rendering of the Wikipedia page 
 
-In our case, we'll be choosing the second point. 
+In our case, we'll be choosing the second point. <br>
+Once the git is cloned:
 
 ## The Python Extractor
 
@@ -29,7 +30,7 @@ Note that this extractor as only tested on one url and may doesn't work for othe
 
 ## The Java extractor
 
-Extracting Wikipedia tables into CSV files (basic skeleton for testing/benchmarking solutions). Once the git is cloned:
+The second extractor was made in Java. 
 ```
 cd wikimatrix 
 mvn test
