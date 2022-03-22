@@ -1,7 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
 import pandas as pd
-import regex as re
 import pprint
 
 link = 'https://en.wikipedia.org/wiki/Comparison_of_digital_SLRs' 
